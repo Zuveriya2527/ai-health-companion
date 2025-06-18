@@ -1,6 +1,6 @@
 # chatbot.py
 
-def chat_response(user_input):
+def chatbot_response(user_input):
     user_input = user_input.lower()
 
     if "fever" in user_input:
