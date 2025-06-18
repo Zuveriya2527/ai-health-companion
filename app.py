@@ -33,7 +33,11 @@ try:
         health_risk_prediction()
 
     elif option == "AI Chatbot":
-        health_chatbot()
+        st.header("💬 Ask the Health Chatbot")
+        user_input = st.text_input("You:", "")
+        if user_input:
+            response = chatbot_response(user_input)
+            st.write("AI:", response)
 
 except ModuleNotFoundError as e:
     print("Required module not found:", e)
