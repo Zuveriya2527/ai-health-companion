@@ -1,7 +1,7 @@
 # app.py
 try:
     import streamlit as st
-    from chatbot import health_chatbot
+    from chatbot import chatbot_response
     from diet_fitness import diet_advice
     from mental_health import mental_health_check
     from risk_predictor import health_risk_prediction
