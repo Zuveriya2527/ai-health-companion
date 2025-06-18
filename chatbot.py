@@ -27,3 +27,15 @@ def chatbot_response(user_input):
     else:
         return "I'm sorry, I couldn't find an answer. Please ask about common health topics like fever, diet, or exercise."
 
+
+# 🧠 Add this for Streamlit chatbot UI
+import streamlit as st
+
+def health_chatbot():
+    st.subheader("💬 Ask the Health Chatbot")
+    user_input = st.text_input("You:")
+    if user_input:
+        response = chatbot_response(user_input)
+        st.write(f"**AI:** {response}")
+
+
