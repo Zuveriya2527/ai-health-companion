@@ -1,16 +1,25 @@
 # 🤖 AI Health Companion
 
-An AI-powered health assistant built with Streamlit to guide users on:
+An AI-powered personal health assistant that supports users with:
+- 🩺 Symptom Checking (coming soon)
+- 🍎 Diet & Fitness Recommendations
+- 🧠 Mental Wellness Assessments
+- 🧬 Health Risk Predictions
+- 💬 AI Chatbot for general health queries
 
-- 🩺 Symptom Checking *(Coming Soon)*
-- 🥗 Diet & Fitness Advice
-- 🧠 Mental Wellness Screening
-- 🔬 Health Risk Prediction
-- 💬 AI Chatbot for health queries
+## 🛠 Features
+- Streamlit-based responsive interface
+- Modular architecture
+- User-friendly navigation via sidebar
 
-## 🚀 Run It Locally
+## 📁 Structure
+- `app.py` - Main Streamlit interface
+- `chatbot.py` - ChatGPT-style health assistant
+- `diet_fitness.py` - Provides diet & exercise tips
+- `mental_health.py` - Simple mental health self-check
+- `risk_predictor.py` - Predicts health risk using input data
 
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/Zuveriya2527/AI-Health-Companion.git
-   cd AI-Health-Companion
+## 🚀 How to Run
+```bash
+pip install -r requirements.txt
+streamlit run app.py
